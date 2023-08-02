@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-image: linear-gradient(to left, #B0DAFF,  #B799FF);
+}
+
+.todo {
+    width: 400px;
+    border-radius: 4px;
+    background-color: #F6F4EB;
+    box-shadow: 0px 10px 40px #27374D90;
+}
+
+.todo h2 {
+    background-color: #9AC5F4;
+    width: 100%;
+    height: 20%;
+    margin-bottom: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    letter-spacing: 0.15rem;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#text-field {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    outline: none;
+    background-color: transparent;
+    text-indent: 20px;
+    letter-spacing: 0.1rem;
+    font-size: 16px;
+    font-family: 'roboto',sans-serif;
+    margin-left: 10px;
+    border-radius: 6px;
+}
+
+#text-field:focus {
+    border: 3px solid violet;
+}
+
+.list-box {
+    width: 100%;
+    overflow: auto;
+}
+
+.list-items {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.list-items li {
+    height: 30px;
+    letter-spacing: 0.17rem;
+    margin: 10px ;
+    font-family: 'roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px;
+    position: relative;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+li:nth-child(2n){
+    background-color: rgb(128, 128, 128,0.2);
+}
+
+
+.checked {
+    text-decoration: line-through;
+    color: #F45050;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+}
+
+.input-div {
+    height: 60px;
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#plus-icon {
+    order: 1;
+    width: 35px;
+    height: 35px;
+    position: unset;
+    z-index: 100;
+    margin-right: 5px;
+}
